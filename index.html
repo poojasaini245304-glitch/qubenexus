@@ -858,9 +858,7 @@
             });
           });
           </script>
-        </div>
-      </div>
-             
+       
       
       <div class="section-fade space-y-6">
         <div class="glass-card rounded-2xl p-8">
@@ -914,29 +912,7 @@
   </div>
 </section>
 
-<!-- Live Chat Widget -->
-<div id="chat-widget" class="fixed bottom-8 right-8 z-50">
-  <button id="chat-toggle" class="btn-gold w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform">
-    <i class="fas fa-comments text-2xl"></i>
-  </button>
-  <div id="chat-popup" class="hidden absolute bottom-20 right-0 w-80 glass-card rounded-2xl p-6 shadow-2xl">
-    <div class="flex justify-between items-center mb-4">
-      <h4 class="font-bold text-white">Live Chat</h4>
-      <button id="chat-close" class="text-gray-400 hover:text-white">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-    <div class="bg-[var(--black-card)] rounded-lg p-4 mb-4 h-48 overflow-y-auto">
-      <div class="text-center text-gray-500 text-sm">
-        <i class="fas fa-circle text-green-500 text-xs mr-2"></i>We're online
-      </div>
-      <div class="mt-4 text-sm text-gray-300">
-        Hi! How can we help you today?
-      </div>
-    </div>
-    <input type="text" placeholder="Type your message..." class="w-full bg-[var(--black-card)] border border-gray-800 rounded-lg px-4 py-2 text-white text-sm">
-  </div>
-</div>
+
 
 <!-- Footer -->
 <footer class="bg-[var(--black-soft)] border-t border-[rgba(212,175,55,0.1)] pt-16 pb-8">
@@ -969,7 +945,10 @@
       <div>
         <h4 class="font-bold text-white mb-4">Products</h4>
         <ul class="space-y-3">
-          <li><a href="#products" class="text-gray-400 hover:text-[var(--gold)] transition">HOME ORBITE</a></li>
+          <li><a href="#products" class="text-gray-400 hover:text-[var(--gold)] transition">HOME ORBIT
+
+
+</a></li>
           <li><a href="#products" class="text-gray-400 hover:text-[var(--gold)] transition">HOSPITAL MANAGEMENT</a></li>
           <li><a href="#products" class="text-gray-400 hover:text-[var(--gold)] transition">SECURE CLOUD</a></li>
           <li><a href="#" class="text-gray-400 hover:text-[var(--gold)] transition">API DOCUMENTATION</a></li>
@@ -1135,19 +1114,7 @@
   }
   animateParticles();
   
-  // Live Chat Widget
-  const chatToggle = document.getElementById('chat-toggle');
-  const chatPopup = document.getElementById('chat-popup');
-  const chatClose = document.getElementById('chat-close');
-  
-  chatToggle.addEventListener('click', () => {
-    chatPopup.classList.toggle('hidden');
-  });
-  
-  chatClose.addEventListener('click', () => {
-    chatPopup.classList.add('hidden');
-  });
-  
+
  // Form Submissions
   document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -1161,5 +1128,173 @@
     e.target.reset();
   });
 </script>
+
+<!-- QubeNexus AI - Google Gemini / Microsoft Copilot Level -->
+<div id="qn-ultra-pro" style="position:fixed;bottom:24px;right:24px;z-index:2147483647;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+  
+  <button 
+    id="qn-btn-final" 
+    type="button"
+    onclick="document.getElementById('qn-form-final').style.display='block';this.style.display='none';return false;"
+    style="background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border:3px solid #F4E4C1;border-radius:16px;padding:14px 20px;cursor:pointer;box-shadow:0 4px 24px rgba(212,175,55,0.4),0 0 0 1px rgba(244,228,193,0.3);font-weight:600;font-size:15px;color:#000;display:flex;align-items:center;gap:10px;transition:all 0.2s;-webkit-appearance:none;touch-action:manipulation;user-select:none;"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+      <path d="M2 17l10 5 10-5"></path>
+      <path d="M2 12l10 5 10-5"></path>
+    </svg>
+    <span>Qubenexus AI</span>
+  </button>
+
+  <div id="qn-form-final" style="display:none;position:fixed;bottom:100px;right:24px;left:24px;max-width:420px;margin-left:auto;background:#1a1a1a;border:1px solid rgba(212,175,55,0.3);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.05);max-height:85vh;overflow-y:auto;backdrop-filter:blur(20px);">
+    <div style="background:linear-gradient(135deg,rgba(212,175,55,0.15) 0%,rgba(184,148,31,0.15) 100%);padding:20px 24px;border-bottom:1px solid rgba(212,175,55,0.2);display:flex;justify-content:space-between;align-items:center;border-radius:20px 20px 0 0;position:sticky;top:0;backdrop-filter:blur(20px);">
+      <div>
+        <h3 style="margin:0;color:#D4AF37;font-size:18px;font-weight:600;letter-spacing:-0.3px;">◆ Qubenexus Technologies </h3>
+        <p style="margin:4px 0 0 0;color:#8e8ea0;font-size:12px;">Advanced AI Assistant</p>
+      </div>
+      <button 
+        type="button"
+        onclick="document.getElementById('qn-form-final').style.display='none';document.getElementById('qn-btn-final').style.display='flex';return false;"
+        style="background:rgba(255,255,255,0.1);border:none;width:32px;height:32px;border-radius:8px;cursor:pointer;color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;-webkit-appearance:none;"
+      >×</button>
+    </div>
+    <div style="padding:24px;">
+      <p style="color:#8e8ea0;font-size:14px;margin:0 0 20px 0;line-height:1.5;">Initialize your Qubenexus AI assistant</p>
+      <input id="qnu-n" type="text" placeholder="Full Name" style="width:100%;padding:14px 16px;margin-bottom:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#ececf1;box-sizing:border-box;font-size:15px;transition:all 0.2s;-webkit-appearance:none;outline:none;">
+      <input id="qnu-m" type="tel" placeholder="Mobile Number" style="width:100%;padding:14px 16px;margin-bottom:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#ececf1;box-sizing:border-box;font-size:15px;transition:all 0.2s;-webkit-appearance:none;outline:none;">
+      <input id="qnu-c" type="text" placeholder="Company Name" style="width:100%;padding:14px 16px;margin-bottom:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#ececf1;box-sizing:border-box;font-size:15px;transition:all 0.2s;-webkit-appearance:none;outline:none;">
+      <input id="qnu-e" type="email" placeholder="Business Email" style="width:100%;padding:14px 16px;margin-bottom:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#ececf1;box-sizing:border-box;font-size:15px;transition:all 0.2s;-webkit-appearance:none;outline:none;">
+      <select id="qnu-p" style="width:100%;padding:14px 16px;margin-bottom:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#ececf1;box-sizing:border-box;font-size:15px;cursor:pointer;-webkit-appearance:none;outline:none;">
+        <option value="" style="background:#1a1a1a;">Select Solution Interest</option>
+        <option value="HOME ORBITE" style="background:#1a1a1a;">🏠 HOME ORBITE</option>  
+          <option value="DEMO" style="background:#1a1a1a;">🧑🏻‍💻DEMO</option>
+        <option value="HOSPITAL MANAGEMENT" style="background:#1a1a1a;">🏨 HOSPITAL MANAGEMENT</option>
+        <option value="SECURE CLOUD" style="background:#1a1a1a;">☁️SECURE CLOUD</option>
+        <option value="API DOCUMENTATION" style="background:#1a1a1a;">💻 API DOCUMENTATION</option>
+        <option value="Custom Enterprise Solution" style="background:#1a1a1a;">🎯 Custom Enterprise Solution</option>
+      </select>
+      <button 
+        type="button"
+        onclick="var n=document.getElementById('qnu-n').value.trim();var m=document.getElementById('qnu-m').value.trim();var c=document.getElementById('qnu-c').value.trim();var e=document.getElementById('qnu-e').value.trim();var p=document.getElementById('qnu-p').value;if(!n||!m||!c||!e||!p){alert('Please complete all fields');return false;}fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({access_key:'06940d54-4310-4fac-b624-4e27edcef9d3',subject:'New qubenexus Lead: '+n,name:n,email:e,phone:m,company:c,message:'Product: '+p})}).catch(function(){});document.getElementById('qn-form-final').style.display='none';document.getElementById('qn-chat-final').style.display='flex';var h=new Date().getHours();var g=h<12?'Good morning':h<17?'Good afternoon':'Good evening';document.getElementById('qn-welcome-msg').innerHTML=g+' <strong style=color:#D4AF37>'+n+'</strong>.<br><br>I am <strong>qubenexus</strong>, your enterprise AI assistant for <strong>'+c+'</strong>.<br><br>I am here to assist you with <strong style=color:#D4AF37>'+p+'</strong> and provide technical consultation on:<br><br>• Software architecture and development<br>•HOME ORBIT<br>•HOSPITAL MANAGEMENT<br>•WEBSITE DEVELOPMENT<br>• Digital transformation strategy<br><br>How may I assist you today?';return false;"
+        style="width:100%;padding:16px;background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border:none;border-radius:12px;color:#000;font-weight:600;cursor:pointer;font-size:15px;transition:all 0.2s;-webkit-appearance:none;touch-action:manipulation;box-shadow:0 4px 12px rgba(212,175,55,0.3);"
+      >Qubenexus AI Assistant →</button>
+      <p style="color:#666;font-size:11px;margin:16px 0 0 0;text-align:center;line-height:1.5;">Qubenexus-grade • SOC 2 Compliant • Encrypted</p>
+    </div>
+  </div>
+
+  <div id="qn-chat-final" style="display:none;position:fixed;bottom:100px;right:24px;left:24px;max-width:440px;margin-left:auto;height:650px;max-height:85vh;background:#1a1a1a;border:1px solid rgba(212,175,55,0.3);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.05);flex-direction:column;backdrop-filter:blur(20px);">
+    <div style="background:linear-gradient(135deg,rgba(212,175,55,0.15) 0%,rgba(184,148,31,0.15) 100%);padding:18px 20px;border-bottom:1px solid rgba(212,175,55,0.2);display:flex;justify-content:space-between;align-items:center;border-radius:20px 20px 0 0;flex-shrink:0;backdrop-filter:blur(20px);">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:36px;height:36px;background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:16px;">Q</div>
+        <div>
+          <h3 style="margin:0;color:#ececf1;font-size:16px;font-weight:600;letter-spacing:-0.3px;">qubenexus Technologies 
+          </h3>
+          <p style="margin:2px 0 0 0;color:#8e8ea0;font-size:11px;">Qubenexus AI Assistant</p>
+        </div>
+      </div>
+      <button 
+        type="button"
+        onclick="document.getElementById('qn-chat-final').style.display='none';document.getElementById('qn-btn-final').style.display='flex';return false;"
+        style="background:rgba(255,255,255,0.1);border:none;width:32px;height:32px;border-radius:8px;cursor:pointer;color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;-webkit-appearance:none;"
+      >×</button>
+    </div>
+    
+    <div id="qn-msgs-final" style="flex:1;overflow-y:auto;background:#0f0f0f;padding:20px;-webkit-overflow-scrolling:touch;">
+      <div style="background:linear-gradient(135deg,rgba(212,175,55,0.1) 0%,rgba(184,148,31,0.05) 100%);border:1px solid rgba(212,175,55,0.2);border-radius:16px;padding:16px;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:28px;height:28px;background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:14px;">Q</div>
+          <div style="color:#D4AF37;font-weight:600;font-size:14px;">qubenexus AI</div>
+        </div>
+        <div id="qn-welcome-msg" style="color:#ececf1;font-size:14px;line-height:1.6;"></div>
+      </div>
+    </div>
+    
+    <div style="padding:16px 20px;background:rgba(15,15,15,0.8);border-top:1px solid rgba(255,255,255,0.1);flex-shrink:0;backdrop-filter:blur(20px);border-radius:0 0 20px 20px;">
+      <div style="display:flex;gap:10px;align-items:flex-end;">
+        <div style="flex:1;position:relative;">
+          <textarea id="qn-input-final" placeholder="Message qubenexus..." rows="1" style="width:100%;padding:14px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;color:#ececf1;outline:none;font-size:15px;box-sizing:border-box;-webkit-appearance:none;transition:all 0.2s;resize:none;min-height:48px;max-height:120px;font-family:inherit;line-height:1.5;"></textarea>
+        </div>
+        <button 
+          id="qn-send-final"
+          type="button"
+          onclick="var inp=document.getElementById('qn-input-final');var txt=inp.value.trim();if(!txt)return false;var area=document.getElementById('qn-msgs-final');var um=document.createElement('div');um.style.cssText='display:flex;justify-content:flex-end;margin:12px 0;';um.innerHTML='<div style=background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);color:#000;padding:12px 16px;border-radius:16px 16px 4px 16px;max-width:75%;font-size:14px;line-height:1.5;box-shadow:0 2px 8px rgba(212,175,55,0.2);>'+txt+'</div>';area.appendChild(um);inp.value='';inp.style.height='48px';var typing=document.createElement('div');typing.id='qn-typing-ind';typing.style.cssText='display:flex;align-items:center;gap:8px;padding:12px 16px;margin:8px 0;';typing.innerHTML='<div style=width:32px;height:32px;background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:14px;>Q</div><div style=background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;><div style=display:flex;gap:4px;><div style=width:8px;height:8px;background:#D4AF37;border-radius:50%;animation:qn-bounce 1.4s infinite ease-in-out;></div><div style=width:8px;height:8px;background:#D4AF37;border-radius:50%;animation:qn-bounce 1.4s infinite ease-in-out;animation-delay:0.2s;></div><div style=width:8px;height:8px;background:#D4AF37;border-radius:50%;animation:qn-bounce 1.4s infinite ease-in-out;animation-delay:0.4s;></div></div></div>';area.appendChild(typing);area.scrollTop=area.scrollHeight;setTimeout(function(){var t=document.getElementById('qn-typing-ind');if(t)t.remove();var tl=txt.toLowerCase();var h=new Date().getHours();var timeGreet=h<12?'Good morning':h<17?'Good afternoon':'Good evening';var r='';if(tl.includes('hi')||tl.includes('hello')||tl.includes('hey')||tl.includes('good morning')||tl.includes('good afternoon')||tl.includes('good evening')||tl.includes('namaste')){r=timeGreet+'. I can help you with any technical or business queries you have.<br><br>I am here to assist with:<br>• Software architecture and development<br>• Cloud infrastructure and DevOps<br>• Data analytics and AI implementation<br>• Cybersecurity and compliance<br>• Product demonstrations<br>• Technical consultation<br><br>What would you like to discuss?';}else if(tl.includes('demo')||tl.includes('demonstrate')||tl.includes('show')||tl.includes('time')){r='I can arrange a comprehensive technical demonstration for you.<br><br><strong style=color:#D4AF37;>Enterprise Demo Program:</strong><br><br><strong>Session Structure:</strong><br>1. Business Requirements Analysis (10 minutes)<br>2. Technical Architecture Walkthrough (15 minutes)<br>3. Live Product Demonstration (20 minutes)<br>4. Integration & Implementation Planning (10 minutes)<br>5. Q&A with Solution Architects (5 minutes)<br><br><strong>What You\'ll See:</strong><br>• Real-time system performance<br>• Security and compliance features<br>• Integration capabilities<br>• Scalability demonstration<br>• ROI calculator<br><br><strong>Next Steps:</strong><br>Our technical team will contact you as soon as possible to schedule. We can accommodate your timezone and preferred meeting format (video call or in-person).<br><br>What time works best for your team?';}else if(tl.includes('product')||tl.includes('solution')||tl.includes('about')||tl.includes('what do you')||tl.includes('what can you')){r='<strong style=color:#D4AF37;>qubenexus Enterprise Solutions Portfolio</strong><br><br><strong>☁️ CloudSuite Enterprise</strong><br>End-to-end cloud transformation platform enabling zero-downtime migration, Kubernetes orchestration, and multi-cloud DevOps automation. Supports AWS, Azure, and GCP with enterprise-grade security and 99.99% SLA.<br><br><strong>🤖 Analytics Pro</strong><br>Advanced business intelligence platform with predictive analytics, real-time dashboards, and custom machine learning models. Processes structured and unstructured data at scale with natural language querying.<br><br><strong>🛡️ SecureShield</strong><br>Comprehensive cybersecurity solution featuring zero-trust architecture, SOC 2 Type II and ISO 27001 compliance, 24/7 SOC monitoring, automated threat response, and penetration testing.<br><br><strong>💻 NexusOne Platform</strong><br>Unified ERP/CRM platform with workflow automation, REST API integrations, custom module development, and real-time collaboration tools.<br><br><strong>🎯 Custom Enterprise Solutions</strong><br>Bespoke development tailored to your specific business requirements and technical architecture.<br><br>Which solution aligns with your current requirements? I can provide detailed technical specifications, implementation timelines, and ROI analysis.';}else if(tl.includes('website')||tl.includes('web')||tl.includes('site')||tl.includes('develop')||tl.includes('build')||tl.includes('banwani')||tl.includes('banana')){r='I can help you develop a professional enterprise website. Here is a comprehensive overview:<br><br><strong style=color:#D4AF37;>Website Development Services</strong><br><br><strong>Phase 1: Discovery & Architecture (1-2 days)</strong><br>• Business requirements gathering<br>• Technical architecture design<br>• Technology stack selection<br>• Project timeline finalization<br><br><strong>Phase 2: Design & Prototyping (3-5 days)</strong><br>• UI/UX wireframing in Figma<br>• Responsive design for all devices<br>• Brand-aligned visual identity<br>• Interactive prototypes<br><br><strong>Phase 3: Development (1-3 weeks)</strong><br>• Frontend: React/Next.js with TypeScript<br>• Backend: Node.js/Python with REST APIs<br>• Database: PostgreSQL/MongoDB<br>• CMS: WordPress or headless CMS<br><br><strong>Phase 4: Quality Assurance (2-3 days)</strong><br>• Cross-browser testing<br>• Performance optimization (90+ PageSpeed)<br>• Security audit<br>• User acceptance testing<br><br><strong>Phase 5: Deployment & Launch</strong><br>• CI/CD pipeline setup<br>• Domain and SSL configuration<br>• CDN implementation<br>• Monitoring and analytics<br><br><strong>Enterprise Features:</strong><br>• E-commerce with payment gateways<br>• User authentication and authorization<br>• Content management system<br>• API integrations<br>• Advanced analytics<br>• Multi-language support<br><br>✓ Source code ownership<br>✓ 99.99% uptime SLA<br>✓ 24/7 technical support<br>✓ 90 days post-launch support<br>✓ Training and documentation<br>✓ Security audit and compliance<br><br>What is your budget range? I can recommend the optimal solution for your requirements.';}else if(tl.includes('technical')||tl.includes('tech')||tl.includes('architecture')||tl.includes('how')||tl.includes('api')||tl.includes('code')){r='I can provide detailed technical consultation.<br><br><strong style=color:#D4AF37;>Technical Expertise</strong><br><br><strong>Frontend Technologies:</strong><br>React, Next.js, Vue.js, Angular, TypeScript, Tailwind CSS, Material-UI<br><br><strong>Backend Technologies:</strong><br>Node.js, Python (Django/Flask/FastAPI), Java Spring Boot, Go, .NET Core<br><br><strong>Mobile Development:</strong><br>React Native, Flutter, Swift (iOS), Kotlin (Android)<br><br><strong>Databases:</strong><br>PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch, Cassandra<br><br><strong>Cloud & DevOps:</strong><br>AWS, Azure, GCP, Docker, Kubernetes, Terraform, Jenkins, GitLab CI/CD<br><br><strong>AI/ML:</strong><br>TensorFlow, PyTorch, OpenAI API, LangChain, Hugging Face<br><br><strong>Architecture Patterns:</strong><br>• Microservices and API-first design<br>• Event-driven architecture<br>• Serverless computing<br>• Real-time data processing<br>• High availability and disaster recovery<br><br>I can help with:<br>• System architecture design<br>• Code reviews and optimization<br>• Technology stack selection<br>• Performance tuning<br>• Security implementation<br><br>What specific technical challenge are you facing?';}else{r='Thank you for your inquiry.<br><br>I am a professional AI assistant specializing in enterprise technology solutions. I can help you with:<br><br>🌐 <strong>Software Development</strong> - Web applications, mobile apps, enterprise platforms<br>☁️ <strong>Cloud & Infrastructure</strong> - Migration, DevOps, architecture design<br>🤖 <strong>AI & Data Analytics</strong> - Machine learning, business intelligence, data pipelines<br>🛡️ <strong>Cybersecurity</strong> - Compliance, threat protection, security audits<br>💼 <strong>Business Solutions</strong> - Digital transformation, process automation, ERP/CRM<br><br>I can provide:<br>• Technical consultation and architecture guidance<br>• Detailed project proposals with timelines<br>• Code examples and implementation guidance<br>• Product demonstrations and ROI analysis<br>• Strategic recommendations<br><br>Could you please provide more details about your requirements? I will prepare a comprehensive response tailored to your specific needs.';}var bm=document.createElement('div');bm.style.cssText='display:flex;gap:10px;margin:12px 0;align-items:flex-start;';bm.innerHTML='<div style=width:32px;height:32px;background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:14px;flex-shrink:0;>Q</div><div style=background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px 16px 16px 4px;padding:12px 16px;max-width:75%;font-size:14px;line-height:1.6;color:#ececf1;>'+r+'</div>';area.appendChild(bm);area.scrollTop=area.scrollHeight;},800);area.scrollTop=area.scrollHeight;return false;"
+          style="padding:14px 20px;background:linear-gradient(135deg,#D4AF37 0%,#B8941F 100%);border:none;border-radius:14px;color:#000;font-weight:600;cursor:pointer;font-size:15px;white-space:nowrap;-webkit-appearance:none;touch-action:manipulation;transition:all 0.2s;box-shadow:0 2px 8px rgba(212,175,55,0.3);display:flex;align-items:center;gap:6px;height:48px;"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+@keyframes qn-bounce{0%,80%,100%{transform:scale(0.8);opacity:0.5;}40%{transform:scale(1);opacity:1;}}
+#qn-ultra-pro input:focus, #qn-ultra-pro select:focus, #qn-ultra-pro textarea:focus {border-color:rgba(212,175,55,0.5) !important;background:rgba(255,255,255,0.08) !important;}
+#qn-ultra-pro button:hover {transform:translateY(-2px);}
+#qn-ultra-pro #qn-close-f:hover, #qn-ultra-pro #qn-close-c:hover {background:rgba(255,255,255,0.2) !important;}
+</style>
+
+<script>
+// Enhanced event listeners with time-based greeting
+(function() {
+  function initQnUltra() {
+    var btn = document.getElementById('qn-btn-final');
+    var form = document.getElementById('qn-form-final');
+    var chat = document.getElementById('qn-chat-final');
+    var closeF = document.getElementById('qn-close-form');
+    var closeC = document.getElementById('qn-close-chat');
+    var ta = document.getElementById('qn-input-final');
+    
+    if(btn && !btn.onclick) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        form.style.display = 'block';
+        btn.style.display = 'none';
+      });
+    }
+    
+    if(closeF) {
+      closeF.addEventListener('click', function(e) {
+        e.preventDefault();
+        form.style.display = 'none';
+        btn.style.display = 'flex';
+      });
+    }
+    
+    if(closeC) {
+      closeC.addEventListener('click', function(e) {
+        e.preventDefault();
+        chat.style.display = 'none';
+        btn.style.display = 'flex';
+      });
+    }
+    
+    if(ta) {
+      ta.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+      });
+      
+      ta.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          document.getElementById('qn-send-final').click();
+        }
+      });
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initQnUltra);
+  } else {
+    initQnUltra();
+  }
+})();
+</script>
+
 </body>
 </html>
