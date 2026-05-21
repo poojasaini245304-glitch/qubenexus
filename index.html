@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- PLAYABLE_TOUCH_PATCH_V1 --><script>
+(function() {
+  if (window.__playableTouchPatchInstalled) return;
+  window.__playableTouchPatchInstalled = true;
+  var origAdd = EventTarget.prototype.addEventListener;
+  var blockedTypes = { touchstart: 1, touchmove: 1, wheel: 1 };
+  EventTarget.prototype.addEventListener = function(type, listener, options) {
+    if (blockedTypes[type]) {
+      if (options === undefined || options === null) {
+        options = { passive: true };
+      } else if (typeof options === 'boolean') {
+        options = { capture: options, passive: true };
+      } else {
+        options = Object.assign({}, options, { passive: true });
+      }
+    }
+    return origAdd.call(this, type, listener, options);
+  };
+})();
+</script>
+<link rel="canonical" href="https://qubenexus.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QubeNexus - Pan India Digital Solutions">
+<meta name="twitter:description" content="QubeNexus provides innovative digital services across India.">
+
+<meta property="og:title" content="QubeNexus - Pan India Digital Solutions & Services">
+<meta property="og:description" content="QubeNexus is a pan-India digital platform providing innovative tech solutions, services and products. Explore QubeNexus for reliable, scalable digital services across India.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qubenexus.com">
+<meta property="og:site_name" content="QubeNexus">
+
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="qubenexus, qube nexus, pan india, digital solutions, tech services india, qubenexus platform">
 <!-- Playables SDK -->
 <script>// Playables SDK v1.0.0
 // Game lifecycle bridge: rAF-based game-ready detection + event communication
@@ -196,8 +228,8 @@
 <script>window.Intl=window.Intl||{};Intl.t=function(s){return(Intl._locale&&Intl._locale[s])||s;};</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qubenexus Technologies Pvt Ltd | Enterprise Software Solutions</title>
-<meta name="description" content="Qubenexus Technologies Pvt Limited - Qubenexus TECHNOLOGIES AI, CRM, and Cloud solutions trusted by 500+ enterprises worldwide.">
+<title>QubeNexus - Pan India Digital Solutions & Services</title>
+<meta name="description" content="QubeNexus is a pan-India digital platform providing innovative tech solutions, services and products. Explore QubeNexus for reliable, scalable digital services across India.">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -388,6 +420,19 @@
     border: 1px solid rgba(212, 175, 55, 0.2);
   }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "QubeNexus",
+  "url": "https://qubenexus.com",
+  "description": "Pan-India digital solutions and services platform",
+  "areaServed": "IN",
+  "knowsAbout": ["Digital Solutions", "Tech Services", "Platform Services"]
+}
+</script>
+
 </head>
 <body>
 <!-- Preload logo for JS usage -->
